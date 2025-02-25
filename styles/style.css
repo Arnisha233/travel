@@ -1,0 +1,83 @@
+/* google font */
+@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap");
+
+/* common style start */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Mulish", serif;
+}
+.container {
+  width: 87%;
+  margin: 3rem auto;
+  border: 2px solid red;
+}
+.span {
+  color: #ff5400;
+}
+/* common style end */
+
+/* navbar section style start */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-logo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.nav-logo img {
+  width: 41px;
+  height: 48px;
+}
+.nav-logo h3 {
+  color: #131318;
+  font-size: 1.938rem;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+.nav-options ul {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 2rem;
+  border: 2px solid green;
+}
+.nav-options li,
+a {
+  list-style: none;
+  text-decoration: none;
+  color: #424247;
+  text-align: center;
+  font-size: 0.979rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.side-bar {
+  display: none;
+}
+/* navbar section style end */
+
+/* responsive design for mobile */
+@media screen and (max-width: 576px) {
+  .nav-options {
+    display: none;
+  }
+  .side-bar {
+    display: block;
+    font-size: 24px;
+  }
+  .nav-logo h3 {
+    font-size: 1.142rem;
+  }
+  .nav-logo img {
+    width: 24px;
+    height: 28px;
+  }
+}
