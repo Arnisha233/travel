@@ -18,6 +18,18 @@ body {
 .span {
   color: #ff5400;
 }
+.primary-btn {
+  width: 174px;
+  height: 52px;
+  border-radius: 8px;
+  background: #ff5400;
+  color: #fff;
+  text-align: center;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
 /* common style end */
 
 /* navbar section style start */
@@ -64,8 +76,70 @@ a {
 }
 /* navbar section style end */
 
+/* banner section start */
+.explpre-your-travel {
+  background-image: linear-gradient(
+      180deg,
+      rgba(19, 19, 24, 0.8) 0%,
+      rgba(19, 19, 24, 0) 100%
+    ),
+    url("../Images/Group\ 13\ \(1\)\ \(1\).png");
+  padding: 7rem 0;
+  border-radius: 1rem;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.explore-content {
+  text-align: center;
+  border: 3px solid red;
+}
+.explore-content h2 {
+  color: #fff;
+  font-size: 3.438rem;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+.explore-content p {
+  width: 676px;
+  margin: 0 auto;
+  color: #fff;
+  text-align: center;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+  padding-top: 1.25rem;
+}
+.travel-input {
+  width: 768px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.3);
+  margin-top: 2.5rem;
+  padding: 1rem;
+  border: 3px solid red;
+}
+.travel-input input,
+select {
+  width: 174px;
+  height: 52px;
+  border-radius: 8px;
+  background: #fff;
+  padding: 1rem;
+}
+.primary-btn i {
+  margin-right: 8px;
+}
+/* banner section end */
+
 /* responsive design for mobile */
 @media screen and (max-width: 576px) {
+  /* navbar start */
   .nav-options {
     display: none;
   }
@@ -80,4 +154,28 @@ a {
     width: 24px;
     height: 28px;
   }
+  /* navbar end */
+
+  /* banner start */
+  .explore-content h2 {
+    font-size: 1.188rem;
+  }
+  .explore-content p {
+    font-size: 0.75rem;
+    width: 304px;
+  }
+  .travel-input {
+    width: 255px;
+  }
+  .travel-input input,
+  select {
+    width: 100%;
+    height: 100%;
+    margin-top: 1rem;
+  }
+  .primary-btn {
+    width: 100%;
+    margin-top: 1rem;
+  }
+  /* banner end */
 }
