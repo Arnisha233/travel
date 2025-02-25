@@ -13,22 +13,22 @@ body {
 .container {
   width: 87%;
   margin: 3rem auto;
-  border: 2px solid red;
 }
 .span {
   color: #ff5400;
 }
 .primary-btn {
-  width: 174px;
-  height: 52px;
+  width: 150px;
+  height: 45px;
   border-radius: 8px;
   background: #ff5400;
   color: #fff;
   text-align: center;
-  font-size: 1rem;
+  font-size: 1.088rem;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 600;
   line-height: normal;
+  border: #ff5400;
 }
 /* common style end */
 
@@ -58,7 +58,6 @@ body {
   display: flex;
   justify-content: space-evenly;
   gap: 2rem;
-  border: 2px solid green;
 }
 .nav-options li,
 a {
@@ -96,7 +95,6 @@ a {
 }
 .explore-content {
   text-align: center;
-  border: 3px solid red;
 }
 .explore-content h2 {
   color: #fff;
@@ -122,7 +120,6 @@ a {
   background: rgba(255, 255, 255, 0.3);
   margin-top: 2.5rem;
   padding: 1rem;
-  border: 3px solid red;
 }
 .travel-input input,
 select {
@@ -131,11 +128,72 @@ select {
   border-radius: 8px;
   background: #fff;
   padding: 1rem;
+  border: #fff;
 }
-.primary-btn i {
+.find-now {
+  width: 174px;
+  height: 52px;
+  border-radius: 8px;
+  background: #ff5400;
+  color: #fff;
+  text-align: center;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  border: #ff5400;
+}
+.find-now i {
   margin-right: 8px;
 }
 /* banner section end */
+
+/* tour section start */
+.tour {
+  display: flex;
+  gap: 2rem;
+}
+.tour-text {
+  width: 50%;
+}
+.tour-text h3 {
+  color: #131318;
+  font-size: 2.125rem;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+.tour-text p {
+  width: 100%;
+  text-align: justify;
+  color: rgba(19, 19, 24, 0.7);
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+  margin: 1.25rem 0;
+}
+.tour-text .tour-list {
+  width: 456px;
+  color: rgba(19, 19, 24, 0.7);
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+  padding: 0 1rem;
+  text-align: justify;
+}
+.tour-text .tour-list li {
+  padding: 0.813rem 0;
+}
+.tour-img {
+  width: 50%;
+}
+.tour-img img {
+  width: 100%;
+  height: 100%;
+}
+/* tour section end */
 
 /* responsive design for mobile */
 @media screen and (max-width: 576px) {
@@ -173,9 +231,31 @@ select {
     height: 100%;
     margin-top: 1rem;
   }
-  .primary-btn {
+  .find-now {
     width: 100%;
     margin-top: 1rem;
   }
   /* banner end */
+  /* tour start */
+  .tour {
+    display: flex;
+    flex-direction: column;
+  }
+  .tour-text {
+    width: 100%;
+  }
+  .tour-text h3 {
+    font-size: 1.088rem;
+  }
+  .tour-text p {
+    font-size: 0.8rem;
+  }
+  .tour-text .tour-list {
+    width: 100%;
+    font-size: 0.8rem;
+  }
+  .tour-img {
+    width: 100%;
+  }
+  /* tour end */
 }
