@@ -319,6 +319,100 @@ select {
 /* copy to tour section similar tour and get-lost section */
 /* discounts section end */
 
+/* newsletter section start */
+.newsletter-content {
+  display: flex;
+  gap: 24px;
+}
+.newsletter-text {
+  width: 50%;
+  padding: 20px;
+  border: 2px solid #ff5400;
+  border-radius: 1rem;
+}
+.newsletter-text h3 {
+  color: #131318;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+.newsletter-text p {
+  width: 300px;
+  color: #5a5a5d;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+  padding: 1rem 0;
+}
+.newsletter-img {
+  width: 50%;
+  position: relative;
+}
+.newsletter-img img {
+  width: 100%;
+  height: 100%;
+}
+.img-popup {
+  background-color: #ff5400;
+  width: 250px;
+  height: 90px;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transform: rotate(-19.628deg);
+  position: absolute;
+  bottom: 10%;
+  left: 40%;
+}
+.img-popup h2 {
+  color: #fff;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+.img-popup p {
+  color: #fff;
+  text-align: center;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.newsletter-text input {
+  display: flex;
+  flex-direction: column;
+  margin: 16px 0;
+  width: 300px;
+  height: 50px;
+  padding: 16px;
+  border-radius: 8px;
+  background: rgba(19, 19, 24, 0.05);
+  border: none;
+}
+.subscribe {
+  width: 300px;
+  height: 50px;
+  background-color: #ff5400;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+}
+.subscribe button {
+  background-color: #ff5400;
+  border: none;
+  padding: 14px 0;
+  color: #fff;
+  font-size: 1rem;
+}
+/* newsletter section end */
+
 /* responsive design for mobile */
 @media screen and (max-width: 576px) {
   /* navbar start */
@@ -559,4 +653,75 @@ select {
     gap: 3rem;
   }
   /* get-lost section end */
+  /* newsletter secton start */
+  .newsletter-content {
+    flex-direction: column;
+  }
+  .newsletter-text {
+    width: 100%;
+    padding: 20px;
+    border-radius: 1rem;
+  }
+  .newsletter-text h3 {
+    color: #131318;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+  }
+  .newsletter-text p {
+    width: 270px;
+  }
+  .newsletter-img {
+    width: 100%;
+    position: relative;
+  }
+  .newsletter-img img {
+    width: 100%;
+    height: 100%;
+  }
+  .img-popup {
+    background-color: #ff5400;
+    width: 150px;
+    height: 50px;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform: rotate(-19.628deg);
+    position: absolute;
+    bottom: 12%;
+    left: 60%;
+  }
+  .img-popup h2 {
+    color: #fff;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+  }
+  .img-popup p {
+    text-align: center;
+    font-size: 12px;
+    font-weight: 400;
+  }
+  .newsletter-text input {
+    display: flex;
+    flex-direction: column;
+    margin: 16px 0;
+    width: 100%;
+    padding: 16px;
+    border-radius: 8px;
+  }
+  .subscribe {
+    width: 100%;
+    background-color: #ff5400;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+  }
+  /* newsletter section end */
 }
