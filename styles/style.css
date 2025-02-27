@@ -151,7 +151,7 @@ select {
 /* tour section start */
 .tour {
   display: flex;
-  gap: 2rem;
+  gap: 3rem;
 }
 .tour-text {
   width: 50%;
@@ -315,6 +315,10 @@ select {
 }
 /* chosse section end */
 
+/* discounts section start */
+/* copy to tour section similar tour and get-lost section */
+/* discounts section end */
+
 /* responsive design for mobile */
 @media screen and (max-width: 576px) {
   /* navbar start */
@@ -453,4 +457,106 @@ select {
     line-height: 26px;
   }
   /* choose section end */
+
+  /* discounts sectin start */
+  .discount-card {
+    background-image: url(../Images/Group\ 39.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: end;
+    border-radius: 1rem;
+    margin: 20px 0;
+  }
+  .discount-card img {
+    width: 100%;
+    height: 100%;
+  }
+  .two {
+    background-image: url(../Images/Group\ 40.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 1rem;
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: first baseline;
+  }
+  .discount-text {
+    border-radius: 16px;
+    border: 2px solid #fff;
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(2.5px);
+    width: 303px;
+    height: 297px;
+    border: 3px solid red;
+    margin: 10px;
+    padding: 0px;
+  }
+  .discount-text-icon {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    border: 3px solid red;
+  }
+  .one {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+    border: 3px solid green;
+  }
+  .one img {
+    width: 24px;
+    height: 24px;
+  }
+  .one p {
+    color: #5a5a5d;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .discount-text h3 {
+    color: #131318;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+  }
+  .discount-text p {
+    color: #5a5a5d;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    margin: 1rem 0;
+    border: 3px solid red;
+  }
+  .discount-text h3 {
+    color: #ff5400;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    margin: 1rem 0;
+    border: 3px solid red;
+  }
+  .btn {
+    text-align: center;
+  }
+  /* discounts sectin end */
+
+  /* get-lost section start */
+  .tour {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+  }
+  /* get-lost section end */
 }
