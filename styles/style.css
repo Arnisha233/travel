@@ -196,13 +196,12 @@ select {
 /* tour section end */
 
 /* destination section start */
-.destination-text {
-  border: 2px solid orange;
+.same-text {
   text-align: center;
   width: 560px;
   margin: 0 auto;
 }
-.destination-text h3 {
+.same-text h3 {
   color: #131318;
   text-align: center;
   font-size: 2.15rem;
@@ -210,9 +209,10 @@ select {
   font-weight: 800;
   line-height: normal;
 }
-.destination-text p {
+.same-text p {
   color: rgba(19, 19, 24, 0.7);
   text-align: center;
+  margin: 0 auto;
   font-size: 1rem;
   font-style: normal;
   font-weight: 400;
@@ -220,7 +220,6 @@ select {
   padding: 24px 0;
 }
 .destinatin-images {
-  border: 3px solid red;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: repeat(3, 1fr);
@@ -275,6 +274,46 @@ select {
   color: #fff;
 }
 /* destination section end */
+
+/* choose section start */
+.choose-card {
+  display: flex;
+  gap: 1rem;
+  margin-top: 40px;
+}
+.choose-one {
+  width: 50%;
+  background-color: #fbb56333;
+  border-radius: 16px;
+  padding: 32px;
+}
+.choose-one h4 {
+  color: #131318;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  padding: 1rem 0;
+}
+.choose-one p {
+  width: 400px;
+  color: #5a5a5d;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+}
+.two {
+  background-color: #29cef633;
+}
+.three {
+  margin: 1rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+/* chosse section end */
 
 /* responsive design for mobile */
 @media screen and (max-width: 576px) {
@@ -341,16 +380,16 @@ select {
   /* tour end */
 
   /* destination start */
-  .destination-text {
+  .same-text {
     border: 2px solid orange;
     text-align: center;
     width: 90%;
     margin: 0 auto;
   }
-  .destination-text h3 {
+  .same-text h3 {
     font-size: 1.063rem;
   }
-  .destination-text p {
+  .same-text p {
     width: 90%;
   }
   .destinatin-images {
@@ -389,4 +428,29 @@ select {
     grid-row: 7 / span 1;
   }
   /* destionation end */
+
+  /* choose section start */
+  .choose-card {
+    flex-direction: column;
+  }
+  .choose-one {
+    width: 100%;
+  }
+  .choose-one h4 {
+    color: #131318;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    padding: 1rem 0;
+  }
+  .choose-one p {
+    width: 200px;
+    color: #5a5a5d;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+  }
+  /* choose section end */
 }
