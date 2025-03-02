@@ -8,27 +8,48 @@
     <link rel="stylesheet" href="styles/style.css">
     <!-- fontawesome link -->
     <script src="https://kit.fontawesome.com/aee39fb15b.js" crossorigin="anonymous"></script>
+    <style type="text/css">
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
 </head>
 
 <body>
-    <header class="container">
+    <header class="container nav">
         <nav class="navbar">
             <div class="nav-logo">
                 <img src="./Images/Group 40071 (2).png" alt="logo">
                 <h3>Hero <span class="span">Travel</span></h3>
             </div>
-            <div class="nav-options">
+            <label class="hamburger-menu">
+                <input type="checkbox" />
+            </label>
+            <aside class="sidebar">
+
                 <ul>
                     <li><a class="span" href="">Home</a></li>
-                    <li><a href="">Package</a></li>
-                    <li><a href="">Testimonial</a></li>
-                    <li><a href="">Blog</a></li>
-                    <li><a href="">Contact</a></li>
+                    <li><a href="#destination">Package</a></li>
+                    <li><a href="#choose">Testimonial</a></li>
+                    <li><a href="#get-lost">Blog</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
+
+            </aside>
+            <div class="nav-options">
+
+                <ul>
+                    <li><a class="span" href="">Home</a></li>
+                    <li><a href="#destination">Package</a></li>
+                    <li><a href="#choose">Testimonial</a></li>
+                    <li><a href="#get-lost">Blog</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+
             </div>
-            <div class="side-bar">
+            <!-- <div class="side-bar">
                 <i class="fa-solid fa-bars"></i>
-            </div>
+            </div> -->
         </nav>
     </header>
     <main>
@@ -43,6 +64,8 @@
                 <input type="text" name="" id="" placeholder="where go">
                 <select name="" id="">
                     <option value="">When</option>
+                    <option value="">Today</option>
+                    <option value="">Tomorrow</option>
                 </select>
                 <select name="" id="">
                     <option value="">Select Type</option>
@@ -80,7 +103,7 @@
         </section>
         <!-- tour section end -->
         <!-- destination section start -->
-        <section class="container">
+        <section class="container" id="destination">
             <div class="same-text">
                 <h3>Choose Your Destination</h3>
                 <p>Dolor sit amet consectetur. Diam volutpat neque habitasse pharetra odio sit massa. Sodales dictumst
@@ -124,7 +147,7 @@
         <!-- destionation section end -->
 
         <!-- choose section start -->
-        <section class="container">
+        <section class="container" id="choose">
             <div class="same-text">
                 <h2>Why Choose Us</h2>
                 <p>Dolor sit amet consectetur. Diam volutpat neque habitasse pharetra odio sit massa. Sodales dictumst
@@ -171,7 +194,7 @@
                     <img src="./Images/Group 40089.png" alt="">
                 </div>
             </div> -->
-            <div class="tour">
+            <div class="tour" id="get-lost">
                 <div class="tour-text">
                     <h3>A Simple Perfect Place To Get Lost</h3>
                     <p>Dolor sit amet consectetur. Diam volutpat neque habitasse pharetra odio sit massa. Sodales
@@ -195,7 +218,7 @@
         </section>
         <!-- get lost section end -->
         <!-- newsletter section start -->
-        <section class="container">
+        <section class="container" id="contact">
             <div class="newsletter-content">
                 <div class="newsletter-text">
                     <h3>Newsletter</h3>
@@ -219,7 +242,30 @@
         </section>
         <!-- newletter section end -->
     </main>
-    <footer></footer>
+    <footer>
+        <!-- footer section start -->
+        <section class="footer">
+            <div class="footer-content">
+                <div class="nav-logo">
+                    <img src="./Images/Group 40071 (2).png" alt="logo">
+                    <h3>Hero <span class="span">Travel</span></h3>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur. Nulla sit viverra morbi vitae blandit orci potenti vulputate.
+                    Leo erat maecenas vitae elementum ultricies nullam. </p>
+                <div class="footer-social">
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-square-github"></i>
+                </div>
+                <hr class="horizental-line">
+            </div>
+            <div class="footer-copy">
+                <p>2024, All Rights Reserved.</p>
+            </div>
+        </section>
+        <!-- footer section end -->
+    </footer>
 </body>
 
 </html>
